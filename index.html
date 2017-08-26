@@ -23,17 +23,13 @@
         
         <script type="text/javascript">
             
-            setInterval(function() { 
-  $('#slideshow > div:first')
-//    .fadeOut(1000)
-    .next()
-//    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-    
-    
-    
-},  3000);
+            function fadeOutDiv() {
+                var d = document.getElementById("whiteDiv");
+                d.className += " fadeOut";
+                
+                
+                
+            }
             
             $(document).on('click', 'a[href^="#"]', function(e) {
             // target element id
@@ -62,6 +58,8 @@
     
     </head>
 
+    <div id="whiteDiv" class="animated"></div>
+    
     <div class="nav2 animated fadeIn">
         <div style="margin-top:10px;">
             <a href="#products" class="navText1"><span>Products</span></a>
@@ -71,9 +69,11 @@
         </div>
         
     </div>
+    
+    
 
     
-    <header id="home" class="home animated fadeIn">
+    <header onload="fadeOutDiv()" id="home" class="home animated fadeIn">
         <div style="display:inline-block;position:absolute;right:0px">
         <a class="hamburger" style="color:white !important"><i class="fa fa-bars" aria-hidden="true" height=100></i></a>
     </div>
@@ -97,7 +97,8 @@
             </div>
         </div>
     </header>
-    <body>
+    <body onload="fadeOutDiv()">
+        
                   <div class="stickyNav">
                       <a id="navlogo" href="#home" style="cursor: pointer"><img src="resources/images/logo.png" width=100 style="float:left;width:auto;height:100%;padding-bottom:10px;"></a>
               <div style="margin-top:15px;">

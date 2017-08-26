@@ -1,6 +1,21 @@
 /* blue: rgb(43,31,94) rgb(0,63,134) orange: rgb(255,127,0) */
 
 /* GALLERY */
+#whiteDiv{
+    background-color:white;
+    position: fixed;
+    top: 0;
+    width:100vw;
+    height:100vh;
+    z-index:1010;
+    transition: all 2s ease-in-out;
+}
+
+
+.hide{
+    display:none !important;
+}
+
 body{
     font-family: 'Encode Sans', sans-serif !important;
 }
@@ -65,6 +80,8 @@ h1{
     max-height: 100px;
     padding-top: 8px;
 }
+
+
 
 
 
