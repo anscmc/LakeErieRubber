@@ -69,13 +69,17 @@
             <a href="#quote" class="navText1"><span>Request a Quote</span></a>
             <a href="#contact" class="navText1"><span>Contact Us</span></a>
         </div>
-        <a class="hamburger"><i class="fa fa-bars" aria-hidden="true" height=100></i></a>
+        
     </div>
+
+    
     <header id="home" class="home animated fadeIn">
-       <div style="height:8vh;"></div>
+        <div style="display:inline-block;position:absolute;right:0px">
+        <a class="hamburger" style="color:white !important"><i class="fa fa-bars" aria-hidden="true" height=100></i></a>
+    </div>
           <div class="container" style="max-width:1400px">
               <div class="row" style="width:100%;">
-               <div class="col-sm-6 homeLeft">
+               <div class="col-lg-6 homeLeft">
                    <div style="inline-block;width:100%;margin:10px;padding:0;margin:0 auto">
                       <img src="resources/images/logo.png" style="width:80%">
                    </div>
@@ -86,17 +90,18 @@
                        Lake Erie Rubber &amp; Manufacturing is a custom rubber molding and manufacturing company that is committed to improving customer outcomes through high quality, on time delivery and responsive customer service.
                    </p>
                </div>
-               <div class="col-sm-6 homeRight animated">
+               <div class="col-lg-6 homeRight animated">
                    <br>
-                  <img src="resources/images/parts/bellow.png" style="width:100%;border-radius: 20px;box-shadow: 0px 0px 15px">
+                  <img src="resources/images/parts/bellow.png" style="width:100%;border-radius: 20px;">
                </div>
             </div>
         </div>
     </header>
     <body>
                   <div class="stickyNav">
-                      <a href="#home" style="cursor: pointer"><img src="resources/images/logo.png" width=100 style="float:left;width:auto;height:100%;padding-bottom:10px;"></a>
-              <div style="margin-top:10px;">
+                      <a id="navlogo" href="#home" style="cursor: pointer"><img src="resources/images/logo.png" width=100 style="float:left;width:auto;height:100%;padding-bottom:10px;"></a>
+              <div style="margin-top:15px;">
+                  
             <a href="#home" class="navText2"><span>Home</span></a>
             <a href="#products" class="navText2"><span>Products</span></a>
             <a href="#about" class="navText2"><span>About Us</span></a>
@@ -106,12 +111,12 @@
         <a class="hamburger"><i class="fa fa-bars" aria-hidden="true" height=100></i></a>
           </div>
       <div id="products">
-          <h1 class="fontH" style="text-align: center;">PRODUCTS</h1>
+          <h1 class="fontH fontProd" style="text-align: center;">PRODUCTS</h1>
           <br>
 <!--          <div style="width:75%;border-top:1px solid grey;padding-bottom: 20px;margin:0 auto;max-width: 500px;"></div>-->
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-lg-6">
                 <div class="w3-content w3-display-container gallery">
                   <img class="mySlides" src="resources/images/parts/bellow.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
                   <img class="mySlides" src="resources/images/parts/cablecleat.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
@@ -144,7 +149,7 @@
                     }
                   </script>
               </div>
-              <div class="col-sm-6">
+              <div class="col-lg-6">
                 <div id="pwrap">
                     <p id="productsp">Lake Erie Rubber is committed to providing high quality rubber molded parts, rubber to metal bonded parts, silicone parts, machined plastics, metal assemblies and CNC machined parts.</p>
                     <p id="productsp">Common parts produced are vibration isolators, motor mounts, bellows, boots, air ducts, pipe gaskets, bushings, bumpers, lathe and die cut washers and extrusions.</p>
@@ -152,10 +157,10 @@
               </div>
             </div>
           </div>
-      
+      <br>
       
       </div>
-        <div style="width:100%;min-height:100vh;background-color:rgb(43,31,94)">
+        <div style="width:100%;min-height:100vh;background-color:rgb(0,63,134)">
             <div id="about">
                 <h1 class="fontH" style="font-family: 'Encode Sans', sans-serif;color:white !important">ABOUT US</h1>
                 <div class="lineL"></div>
@@ -180,7 +185,7 @@
 -->
           <form>
               <div class="container" style="width:100%;padding:0;">
-                <div class="row" style="width:100%;">
+                <div class="row">
                     <div class="col-sm-6" style="padding:5px !important;">
                       <div class="form-group">
                         <label for="name">Name</label>
@@ -229,12 +234,27 @@
                         <br>
                         <input type="submit" value="Request Quote" class="btn btn-default reqBTN">
                     </div>
+                    <br>
                 </div>
               </div>
           </form>
       </div>
-      <div id="contact">
-        <h1 class="fontH">CONTACT US</h1>
-      </div>
+        <div style="width:100%;min-height:100vh;background-color:rgb(255,127,0)">
+<!--            <div id="contact">-->
+                
+                <div id="contact" class="container"><h1 class="fontH">CONTACT US</h1>
+                    <div class="lineC"></div>
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-push-6">
+                            asdfasdf
+                        </div>
+                        <div class="col-lg-6 col-lg-pull-6 map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11849.478128692266!2d-80.21692!3d42.056698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27bbef5a201b8fd4!2sLake+Erie+Rubber+%26+Manufacturing!5e0!3m2!1sen!2sus!4v1503720503260" frameborder="0" height=100% width=100% style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+<!--            </div>-->
+        </div>
+      
     </body>  
 </html>
