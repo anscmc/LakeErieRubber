@@ -331,3 +331,8 @@ h1{
 .map{
     height:60vh;
 }
+@media (max-width:1024px){
+    .map{
+        height:40vh;
+    }
+}
