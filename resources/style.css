@@ -1,0 +1,298 @@
+/* blue: rgb(43,31,94) orange: rgb(255,127,0) */
+
+/* GALLERY */
+body{
+    font-family: 'Encode Sans', sans-serif !important;
+}
+
+.fontH{
+    padding-top:0px;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Encode Sans', sans-serif !important;
+    margin-top:12vh !important;
+}
+
+#slideshow { 
+    width: 100%;
+    display: inline-block;
+    position: relative;   
+    
+}
+#slideshow:after{
+  padding-top: 53%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+#slideshow > div { 
+    position: absolute; 
+}
+/* GALLERY */
+
+.nav2{
+    height:8vh;
+    background-color:transparent;
+    position: absolute;
+    display:block;
+    width:100%;
+    transition: all .5s ease-in-out;
+    z-index:1001;
+    color:white !important;
+    text-align: center;
+    font-weight: bold;
+    max-height: 60px;
+}
+.stickyNav{
+    border-bottom:1px 1px 3px black;
+    height:12vh;
+    background-color:white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width:100%;
+    transition: all .5s ease-in-out;
+    z-index:1002;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    max-height: 75px;
+    padding-top: 8px;
+}
+
+.navText1{
+    text-shadow: 1px 1px 3px black;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    padding:20px;
+    font-size: 20px;
+    font-family: 'Encode Sans', sans-serif;
+    text-decoration: none !important;
+    padding-top:15px;
+    color:white;
+}
+.navText1:hover{
+    text-shadow: 2px 2px 6px black;
+    text-decoration: none;
+    color: white;
+}
+.navText2{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    padding:20px;
+    font-size: 20px;
+    font-family: 'Encode Sans', sans-serif;
+    text-decoration: none !important;
+    padding-top:15px;
+    color:black;
+    font-weight: lighter;
+}
+.navText2:hover{
+    text-shadow: 1px 1px 3px black;
+    text-decoration: none;
+    color:black;
+}
+
+.hamburger{
+    float:right;
+    font-size:30px;
+    display:none;
+    margin-right:10px;
+    transition: all .5s ease-in-out;
+}
+.hamburger:hover{
+    
+}
+
+@media (max-width:768px){
+    .navText1{
+        display:none;
+    }
+    .hamburger{
+        display:inline;
+        cursor: pointer;
+    }
+    .homeLeft{
+        margin-top:0px !important;
+        padding-top:0px !important;
+    }
+    .homeRight{
+        margin-top:0px !important;
+    }
+    .navText2{
+        display:none;
+    }
+}
+
+.home{
+    min-height:100vh;
+    background-image: url(images/frontBlur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-bottom:20px;
+    background-attachment:fixed;
+}
+.homeLeft{
+    margin:0px;
+    padding-top:7%;
+    display:inline;
+}
+.homeRight{
+    text-align:center;
+    padding-top:10%;
+    display: inline;
+}
+
+#slideshow { 
+    width: 100%;
+    height:100%;
+    display: inline-block;
+    position: relative;   
+    
+}
+#slideshow:after{
+  padding-top: 53%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+#slideshow > div { 
+    position: absolute; 
+}
+
+.fontH{
+    font-family: 'Encode Sans', sans-serif;
+/*    text-shadow: 4px 4px 4px #aaa;*/
+}
+.fontP{
+    font-family: 'Encode Sans', sans-serif;
+    text-align:left;
+    font-size:24px;
+    text-shadow: 1px 1px 3px black;
+    
+}
+
+@media (max-width:768px){
+    h1{
+        font-size: 24px !important;
+    }
+    .fontP{
+        font-size: 16px !important;
+        margin-left:15px;
+    }
+}
+
+.lineL{
+    border-top:1px solid rgb(43,31,94);
+    width:33%;
+    padding-bottom: 10px;
+}
+
+.lineR{
+    border-top:1px solid grey;
+    width:48%;
+    padding-bottom: 10px;
+    float:right;
+}
+.lineR2{
+    display:inline;
+    width:45%;
+    padding-bottom: 10px;
+    border-top:1px solid white;
+    color:white;
+}
+
+#products{
+    min-height:100vh;
+    padding:20px;
+    max-width:1200px;
+    margin:0 auto;
+    background-color: transparent;
+}
+#productsp{
+    line-height: 30px;
+    font-size: 18px;
+    width:100%;
+    font-family: 'Encode Sans', sans-serif;
+}
+#pwrap{
+    width:100%;
+    padding:20px;
+}
+@media (min-width:768px){
+    #pwrap{
+        position: absolute;
+        top: 100%;
+        transform: translateY(30%);
+    }
+}
+
+.gallery{
+    width:100%;
+    display: inline-block;
+    height:100% !important;
+    text-align: center !important;
+    vertical-align:center;
+}
+
+#about{
+   padding:20px;
+   margin:0 auto;
+   max-width:1000px;
+   min-height:100vh;
+    color:white;
+    background-color: rgb(43,31,94);
+}
+#aboutp{
+    line-height: 30px;
+    font-size: 18px;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+@media (max-width:768px){
+    #aboutp{
+        font-size:14px;
+    }
+    #productsp{
+        font-size:14px;
+    }
+}
+
+#quote{
+    padding:20px;
+   margin:0 auto;
+   max-width:1000px;
+   min-height:100vh;
+}
+.form-control{
+    box-shadow: 1px 1px 3px lightgrey;
+}
+.reqBTN{
+    border:1px solid rgb(255,127,0);
+    color:rgb(255,127,0);
+    width:100%;
+    max-width:200px;
+    transition: all .5s ease-in-out;
+}
+.reqBTN:hover{
+    color:white;
+    background-color: rgb(255,127,0);
+}
+@media (max-width:768px){
+    .reqBTN{
+        max-width:500px;
+    }
+}
+
+#contact{
+    padding:20px;
+   margin:0 auto;
+   max-width:1000px;
+   min-height:100vh;
+}
