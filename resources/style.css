@@ -275,6 +275,30 @@ h1{
     font-family: 'Encode Sans', sans-serif;
 }
 
+.circleBase {
+    border-radius: 50%;
+}
+
+.circle1 {
+    width: 250px;
+    height: 250px;
+    background-image: url(images/employees/george.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid rgb(255,127,0);
+}
+.circle2 {
+    width: 250px;
+    height: 250px;
+    background-image: url(images/employees/tracy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid rgb(255,127,0);
+}
+
+
 @media (max-width:767px){
     #aboutp{
         font-size:14px;
