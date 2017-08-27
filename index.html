@@ -24,15 +24,8 @@
         <script type="text/javascript">
             
             function fadeOutDiv() {
-                var d = document.getElementById("whiteDiv");
-                d.className += " fadeOut";
-                
-                setTimeout(function(){
-                    d.className += " hide" }, 
-                1000);
-                
-                
-                
+                var a = document.getElementById("whiteDiv");
+                a.className += " fadeOut";  
             }
             
             $(document).on('click', 'a[href^="#"]', function(e) {
@@ -64,7 +57,7 @@
 
     <div id="whiteDiv" class="animated"></div>
     
-    <div class="nav2 animated fadeIn">
+    <div class="nav2">
         <div style="margin-top:10px;">
             <a href="#products" class="navText1"><span>Products</span></a>
             <a href="#about" class="navText1"><span>About Us</span></a>
@@ -81,9 +74,9 @@
         <div style="display:inline-block;position:absolute;right:0px">
         <a class="hamburger" style="color:white !important"><i class="fa fa-bars" aria-hidden="true" height=100></i></a>
     </div>
-          <div class="container" style="max-width:1400px">
-              <div class="row" style="width:100%;">
-               <div class="col-lg-6 homeLeft">
+          <div class="container" style="max-width:1400px;">
+              <div class="row headWrap" style="width:100%;">
+               <div style="z-index: 501 !important" class="col-lg-6 homeLeft">
                    <div style="inline-block;width:100%;margin:10px;padding:0;margin:0 auto">
                       <img src="resources/images/logo.png" style="width:80%">
                    </div>
@@ -94,9 +87,11 @@
                        Lake Erie Rubber &amp; Manufacturing is a custom rubber molding and manufacturing company that is committed to improving customer outcomes through high quality, on time delivery and responsive customer service.
                    </p>
                </div>
-               <div class="col-lg-6 homeRight animated">
+               <div style="z-index:500 !important" class="col-lg-6 homeRight animated">
                    <br>
-                  <img src="resources/images/parts/bellow.png" style="width:100%;border-radius: 20px;">
+                  <img id="headimg1" class="animated" src="resources/images/parts/bellow.png" style="width:100%;border-radius: 20px;">
+                   <img id="headimg2" class="headImg animated" src="resources/images/parts/bellow.png" style="width:100%;border-radius: 20px;">
+                   <img id="headimg3" class="headImg animated" src="resources/images/parts/bellow.png" style="width:100%;border-radius: 20px;">
                </div>
             </div>
         </div>
@@ -167,13 +162,31 @@
       </div>
         <div style="width:100%;min-height:100vh;background-color:rgb(0,63,134)">
             <div id="about">
-                <h1 class="fontH" style="font-family: 'Encode Sans', sans-serif;color:white !important">ABOUT US</h1>
+                <h1 class="fontH" style="font-family: 'Encode Sans', sans-serif;color:white !important;text-align: left;">ABOUT US</h1>
                 <div class="lineL"></div>
                 <p id="aboutp">Lake Erie Rubber &amp; Manufacturing is proud to continue as an extension of the Scully Enterprises business started in 1961. Our new ownership, as of August 1, 2017, is dedicated to growing the business in Erie, PA. We operate out of the Scully Enterprises location and have maintained all employees and equipment through the transition.  We are excited to incorporate a continuous improvement, Lean culture through the entire business! We will use the Lean guiding principles to drive continued improvement in safety, quality, delivery and cost for our business. Ultimately, our dedication to the lean process and journey will lead to improved outcomes for our customers.</p>
                 <br>
-                <div class="circleBase circle1"></div>
-                <br>
-                <div class="circleBase circle2"></div>
+                <div class="employees">
+                    <div class="employee">
+                        <div class="circleBase circle1"></div>
+                        <div class="empText">
+                            <p class="infotext" style="font-weight: bold;">George Nicewonger</p>
+                            <p class="infotext">Director of Operations</p>
+                            <p class="infotext">814-835-0173 ext 13</p>
+                            <p class="infotext">george.nicewonger@lakeerierubber.com</p>
+                        </div>
+                    </div>
+                    <div class="employee">
+                        <div class="circleBase circle2"></div>
+                        <div class="empText">
+                            <p class="infotext"; style="font-weight: bold">Tracy Lockwood</p>
+                            <p class="infotext">Office Manager</p>
+                            <p class="infotext">814-835-0173 ext 10</p>
+                            <p class="infotext">tracy.lockwood@lakeerierubber.com</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
       <div id="quote">

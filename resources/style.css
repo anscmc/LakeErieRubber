@@ -12,12 +12,23 @@
 }
 
 
+
 .hide{
     display:none !important;
 }
 
+.headImg{
+    display:none;
+}
+
 body{
     font-family: 'Encode Sans', sans-serif !important;
+}
+
+@media (min-width:1400px){
+    .headWrap{
+        margin-top:10%;
+    }
 }
 
 .fontH{
@@ -26,6 +37,22 @@ body{
 }
 .fontProd{
     margin-top:8vh !important;
+}
+
+@media (min-width:1100px){
+    .fontProd{
+        margin-top:16vh !important;
+    }
+}
+@media (min-width:1450px){
+    .fontProd{
+        margin-top:20vh !important;
+    }
+}
+@media (min-width:1800px){
+    .fontProd{
+        margin-top:25vh !important;
+    }
 }
 
 h1{
@@ -132,11 +159,7 @@ h1{
         font-size: 40px;
     }
 }
-@media (min-width:1024px){
-    .hamburger{
-        font-size:50px;
-    }
-}
+
 
 @media (max-width:1024px){
     .nav2{
@@ -197,10 +220,6 @@ h1{
     position: absolute; 
 }
 
-.fontH{
-    font-family: 'Encode Sans', sans-serif;
-/*    text-shadow: 4px 4px 4px #aaa;*/
-}
 .fontP{
     font-family: 'Encode Sans', sans-serif;
     text-align:left;
@@ -247,7 +266,7 @@ h1{
 }
 
 #products{
-/*    min-height:100vh;*/
+    min-height:100vh;
     padding:20px;
     max-width:1200px;
     margin:0 auto;
@@ -285,15 +304,26 @@ h1{
 /*   min-height:100vh;*/
     color:white;
     background-color: rgb(0,63,134);
+    text-align: center;
 }
 #aboutp{
     line-height: 30px;
     font-size: 18px;
     font-family: 'Encode Sans', sans-serif;
+    text-align:left;
 }
+
+.infotext{
+    line-height: 25px;
+    font-size: 18px;
+    font-family: 'Encode Sans', sans-serif;
+    text-align: left;
+}
+
 
 .circleBase {
     border-radius: 50%;
+    display:inline-block;
 }
 
 .circle1 {
@@ -303,7 +333,7 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 5px solid rgb(255,127,0);
+    border: 3px solid rgb(255,127,0);
 }
 .circle2 {
     width: 250px;
@@ -312,13 +342,26 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 5px solid rgb(255,127,0);
+    border: 3px solid rgb(255,127,0);
+
 }
+.empText{
+    display:inline-block;
+    color:white;
+    height:100%;
+    vertical-align:top;
+    padding-top:50px;
+    padding-left:10px;
+}
+
 
 
 @media (max-width:767px){
     #aboutp{
         font-size:14px;
+    }
+    #infotext{
+        font-size: 14px;
     }
     #productsp{
         font-size:14px;
@@ -328,6 +371,9 @@ h1{
 @media (min-width:1024px){
     #aboutp{
         font-size:24px;
+    }
+    #infotext{
+        font-size: 24px;
     }
     #productsp{
         font-size:24px;
@@ -365,7 +411,7 @@ h1{
     background-color:rgb(255,127,0);
     padding:20px;
    margin:0 auto;
-   max-width:1000px;
+   max-width:1200px;
    min-height:100vh;
 }
 
