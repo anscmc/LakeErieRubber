@@ -28,6 +28,8 @@
                 a.className += " fadeOut";  
             }
             
+            setTimeout(function(){d.className += " hide"}, 1000);
+            
             $(document).on('click', 'a[href^="#"]', function(e) {
             // target element id
             var id = $(this).attr('href');
