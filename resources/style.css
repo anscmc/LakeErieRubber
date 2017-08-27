@@ -11,7 +11,8 @@
     transition: all 2s ease-in-out;
 }
 
-
+.divNav{display:none;position:fixed;height:100vh;width:100%;background-color:rgb(255,255,255);color:white;z-index:12000;text-align:center;}
+.showNav{display:inline-block;}
 
 .hide{
     display:none !important;
@@ -107,6 +108,23 @@ h1{
     max-height: 80px;
     padding-top: 8px;
 }
+.bottomShadow{
+    -webkit-box-shadow: 0px 5px 7px 0px rgba(82,82,82,0.75);
+    -moz-box-shadow: 0px 5px 7px 0px rgba(82,82,82,0.75);
+    box-shadow: 0px 5px 7px 0px rgba(82,82,82,0.75);
+}
+
+@media (max-width:375px){
+    .stickyNav{
+        max-height:50px !important;
+    }
+}
+
+@media (max-width:768px){
+    .stickyNav{
+        max-height:60px;
+    }
+}
 
 
 
@@ -137,7 +155,7 @@ h1{
     font-family: 'Encode Sans', sans-serif;
     text-decoration: none !important;
     padding-top:15px;
-    color:black;
+    color:black !important;
     font-weight: lighter;
 }
 .navText2:hover{
@@ -145,20 +163,78 @@ h1{
     text-decoration: none;
     color:black;
 }
+.navText3{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: 'Encode Sans', sans-serif;
+    text-decoration: none !important;
+    color:black !important;
+    font-weight: lighter;
+}
+.navText3:hover{
+    text-shadow: 1px 1px 3px black;
+    text-decoration: none !important;
+    color:black;
+}
 
 .hamburger{
     float:right;
-    font-size:30px;
+    font-size:26px;
     display:none;
     margin-right:10px;
     transition: all .5s ease-in-out;
+    top: 0px;
+    position: absolute;
+    right: 0;
+    margin-top:5px;
+}
+.hamburger:hover{
+    color:rgb(255,127,0);
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.hamburger:active{
+    text-decoration: none !important;
+}
+.hamburger:enabled{
+    text-decoration: none !important;
+}
+
+.xBtn{
+    position:fixed;
+    right:0;
+    top:0;
+    margin-top:5px;
+    transition: all .5s ease-in-out;
+    margin-right:10px;
+    font-size:30px;
+    color:black;
+    text-decoration: none !important;
+}
+.xBtn:hover{
+    color:rgb(255,127,0);
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.xBtn:active{
+    text-decoration: none !important;
+}
+.xBtn:enabled{
+    text-decoration: none !important;
 }
 
 @media (min-width:768px){
     .hamburger{
-        font-size: 40px;
+        font-size: 36px;
+    }
+    .xBtn{
+        font-size: 36px;
     }
 }
+
+
 
 
 @media (max-width:1024px){
@@ -166,6 +242,10 @@ h1{
         display:none;
     }
     .hamburger{
+        display:inline;
+        cursor: pointer;
+    }
+    .xBtn{
         display:inline;
         cursor: pointer;
     }
@@ -189,7 +269,12 @@ h1{
     background-position: center;
     text-align: center;
     padding-bottom:20px;
-    background-attachment:fixed;
+    background-attachment:inherit;
+}
+@media (min-width:1025px){
+    .home{
+        background-attachment: fixed;
+    }
 }
 .homeLeft{
     margin:0px;
@@ -313,6 +398,21 @@ h1{
     text-align:left;
 }
 
+.employee{
+    display:inline-block;
+    text-align:center;
+    width:100%;
+}
+.empText{
+    display:inline-block;
+    color:white;
+    height:100%;
+    width:330px;
+    vertical-align:top;
+    padding-top:50px;
+    padding-left:10px;
+}
+
 .infotext{
     line-height: 25px;
     font-size: 18px;
@@ -345,14 +445,7 @@ h1{
     border: 3px solid rgb(255,127,0);
 
 }
-.empText{
-    display:inline-block;
-    color:white;
-    height:100%;
-    vertical-align:top;
-    padding-top:50px;
-    padding-left:10px;
-}
+
 
 
 

@@ -29,6 +29,12 @@
                 setTimeout(function(){a.className += " hide"}, 1000);
             }
             
+            function showNav(){
+                $("div.divNav").fadeToggle("fast");
+                $("div.divNav").toggleClass("showNav fadeOut"); 
+                $("div.ham").toggleClass("hide");
+                $("div.xBtn").toggleClass("hide");
+            }
 
             
             $(document).on('click', 'a[href^="#"]', function(e) {
@@ -69,13 +75,26 @@
         </div>
         
     </div>
-    
+    <div style="text-align:center" class="divNav animated fadeOut">
+             <div style="top:20%;position:absolute;width:320px;text-align:center;margin-left:-150px;left:50%;">
+                 <a onclick="showNav()" class="xBtn">X</a>
+              <a href="#home" onclick="showNav()"><span class="navText3">Home</span></a>
+              <br>
+              <a href="#products" onclick="showNav()"><span class="navText3">Products</span></a>
+              <br>
+              <a href="#about" onclick="showNav()"><span class="navText3">About Us</span></a>
+              <br>
+              <a href="#quote" onclick="showNav()"><span class="navText3">Request a Quote</span></a>
+              <br>
+              <a href="#contact" onclick="showNav()"><span class="navText3">Contact Us</span></a>
+             </div>
+          </div>
     
 
     
-    <header onload="fadeOutDiv()" id="home" class="home animated fadeIn">
-        <div style="display:inline-block;position:absolute;right:0px">
-        <a class="hamburger" style="color:white !important"><i class="fa fa-bars" aria-hidden="true" height=100></i></a>
+    <header id="home" class="home animated fadeIn">
+        <div style="display:inline-block;position:absolute;right:0px;top:0px;">
+        <a class="hamburger" style="color:white !important"><i onclick="showNav()" class="fa fa-bars" aria-hidden="true" height=100></i></a>
     </div>
           <div class="container" style="max-width:1400px;">
               <div class="row headWrap" style="width:100%;">
@@ -111,7 +130,7 @@
             <a href="#quote" class="navText2"><span>Request a Quote</span></a>
             <a href="#contact" class="navText2"><span>Contact Us</span></a>
         </div>
-        <a class="hamburger"><i class="fa fa-bars" aria-hidden="true" height=100></i></a>
+        <a class="hamburger"><i onclick="showNav()" class="fa fa-bars" aria-hidden="true" height=100></i></a>
           </div>
       <div id="products">
           <h1 class="fontH fontProd" style="text-align: center;">PRODUCTS</h1>
