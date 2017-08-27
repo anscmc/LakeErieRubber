@@ -26,9 +26,10 @@
             function fadeOutDiv() {
                 var a = document.getElementById("whiteDiv");
                 a.className += " fadeOut";  
+                setTimeout(function(){a.className += " hide"}, 1000);
             }
             
-            setTimeout(function(){d.className += " hide"}, 1000);
+
             
             $(document).on('click', 'a[href^="#"]', function(e) {
             // target element id
