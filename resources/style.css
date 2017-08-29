@@ -95,11 +95,15 @@ body{
         margin-top:20vh !important;
     }
 }
+
+/*
 @media (min-width:1800px){
     .fontProd{
         margin-top:25vh !important;
     }
 }
+*/
+
 
 h1{
     font-family: 'Encode Sans', sans-serif !important;
@@ -423,9 +427,37 @@ h1{
     }
 }
 
+.productsWrap{
+    display:inline-block;
+    text-align:left;
+}
 .productSpan{
     font-size:16px;
     display: block;
+}
+.productTitle{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+.dw{
+    text-align: center;
+}
+
+@media (max-width:767px){
+    .productsWrap{
+        display: inline-block;
+        text-align: left;
+        width:100%;
+    }
+    .productSpan{
+        width:260px;
+        margin:0 auto;
+    }
+    .productTitle{
+        width:260px;
+        margin:0 auto;
+    }
 }
 
 
