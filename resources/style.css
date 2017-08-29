@@ -442,6 +442,7 @@ h1{
 }
 .dw{
     text-align: center;
+    padding-bottom: 10px;
 }
 
 @media (max-width:767px){
@@ -511,10 +512,18 @@ h1{
 }
 
 .infotext{
-    line-height: 25px;
+
     font-size: 18px;
     font-family: 'Encode Sans', sans-serif;
     text-align: left;
+}
+@media (max-width:374px){
+    .infotext{
+        font-size: 14px;
+    }
+    .empText{
+        width:auto;
+    }
 }
 @media (max-width:623px){
     .infotext{
