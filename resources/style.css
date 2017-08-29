@@ -423,6 +423,13 @@ h1{
     }
 }
 
+.productSpan{
+    font-size:16px;
+    display: block;
+}
+
+
+/*
 .gallery{
     width:100%;
     display: inline-block;
@@ -430,6 +437,7 @@ h1{
     text-align: center !important;
     vertical-align:center;
 }
+*/
 
 #about{
    padding:20px;
