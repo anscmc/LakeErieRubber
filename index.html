@@ -238,7 +238,6 @@
                     <div class="productsWrap">
                         <span class="productTitle">Markets served:</span>
                         <span class="productSpan">Transit/Transportation</span>
-                        <span class="productSpan">Transit/Transportation</span>
                         <span class="productSpan">OEM/Industrial</span>
                         <span class="productSpan">Locomotive/Transit</span>
                         <span class="productSpan">Agriculture</span>
@@ -258,23 +257,48 @@
                 <br>
                 <div class="employees">
                     <div class="employee">
-                        <div class="circleBase circle1"></div>
+                        <div class="circleBase circle3"></div>
                         <div class="empText">
-                            <p class="infotext" style="font-weight: bold;">George Nicewonger</p>
-                            <p class="infotext">Director of Operations</p>
-                            <p class="infotext">814-835-0173 ext 13</p>
-                            <p class="infotext">george.nicewonger@lakeerierubber.com</p>
+                            <p class="infotext"; style="font-weight: bold">Jon Meighan</p>
+                            <p class="infotext">President</p>
+                            <p class="infotext">(315) 247-7075</p>
+                            <p class="infotext infotext3">jon.meighan@lakeerierubber.com</p>
                         </div>
+                        <p class="infotext" style="margin-bottom: 30px;text-align: left;">"I am excited about the opportunity to develop and grow a business in Erie, PA! We will focus on continuous improvement and Lean Manufacturing tools as the driving force to lead us on our journey. I’m married with 2 kids and prefer to spend most of my free time with my family. I still like to fit in my hobbies of biking, auto racing (road course), playing music, skiing and golf when I can as well."</p>
                     </div>
                     <div class="employee">
                         <div class="circleBase circle2"></div>
                         <div class="empText">
                             <p class="infotext"; style="font-weight: bold">Tracy Lockwood</p>
                             <p class="infotext">Office Manager</p>
-                            <p class="infotext">814-835-0173 ext 10</p>
-                            <p class="infotext">tracy.lockwood@lakeerierubber.com</p>
+                            <p class="infotext">(814) 835-0173 ext. 10</p>
+                            <p class="infotext infotext3">tracy.lockwood@lakeerierubber.com</p>
+                        </div>
+                        <p class="infotext" style="margin-bottom: 30px;text-align: left;">"In my spare time I like to spend time with my family, husband Frank, son, daughter and 2 stepdaughters, although the oldest lives out of town we still travel to spend time with her. Now that our kids are grown we have been doing a little more traveling and plan to continue seeing new places. I also like to play volleyball and take walks with my furbabies."</p>
+                    </div>
+                    <div class="employee">
+                        <div class="circleBase circle1"></div>
+                        <div class="empText">
+                            <p class="infotext" style="font-weight: bold;">George Nicewonger</p>
+                            <p class="infotext">Director of Operations</p>
+                            <p class="infotext">(814) 835-0173 ext. 13</p>
+                            <p class="infotext space">george.nicewonger@lakeerierubber.com</p>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <div class="empText2" style="padding-bottom:10px;">
+                            <p class="infotext2" style="font-weight: bold;">Diane Adameck</p>
+                            <p class="infotext2">VP of Sales</p>
+                            <p class="infotext2">(814) 835-0173 ext. 11 </p>
+                            <p class="infotext2">diane.adameck@lakeerierubber.com</p>
+                        </div>
+                    <div class="empText2">
+                            <p class="infotext2" style="font-weight: bold;">Duke Nicewonger</p>
+                            <p class="infotext2">Quality Assurance Manager</p>
+                            <p class="infotext2">(814) 835-0173</p>
+                            <p class="infotext2">duke.nicewonger@lakeerierubber.com</p>
+                        </div>
                 </div>
                 
             </div>
@@ -295,51 +319,51 @@
             <input type="submit" value="Submit">
         </form>
 -->
-          <form>
+          <form data-forge-name="Quote">
               <div class="container" style="width:100%;padding:0;">
                 <div class="row">
                     <div class="col-sm-6" style="padding:5px !important;">
                       <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" data-forge-name="Name" class="form-control" id="name">
                       </div>
                       <div class="form-group">
-                        <label for="pwd">Title/Job Description</label>
-                        <input type="password" class="form-control" id="pwd">
+                        <label for="title">Title/Job Description</label>
+                        <input type="text" data-forge-name="Title" class="form-control" id="title">
                       </div>
                       <div class="form-group">
                         <label for="comp">Company</label>
-                        <input type="text" class="form-control" id="comp">
+                        <input type="text" data-forge-name="Company" class="form-control" id="comp">
                       </div>
                       <div class="form-group">
                         <label for="add">Address</label>
-                        <input type="text" class="form-control" id="add">
+                        <input type="text" data-forge-name="Address" class="form-control" id="add">
                       </div>
                       <div class="form-group">
                         <label for="city">City</label>
-                        <input type="text" class="form-control" id="city">
+                        <input type="text" data-forge-name="City" class="form-control" id="city">
                       </div>
                     </div>
                     <div class="col-sm-6" style="padding:5px !important;">
                         <div class="form-group">
                             <label for="st">State</label>
-                            <input type="text" class="form-control" id="st">
+                            <input type="text" data-forge-name="State" class="form-control" id="st">
                         </div>
                         <div class="form-group">
                             <label for="ph">Phone</label>
-                            <input type="number" class="form-control" id="ph">
+                            <input type="number" data-forge-name="Phone" class="form-control" id="ph">
                         </div>
                         <div class="form-group">
                             <label for="em">Email</label>
-                            <input type="email" class="form-control" id="em">
+                            <input type="email" data-forge-name="Email" class="form-control" id="em">
                         </div>
                         <div class="form-group">
                             <label for="des">Description of order</label>
-                            <input type="text" class="form-control" id="des">
+                            <input type="text" data-forge-name="Order Description" class="form-control" id="des">
                         </div>
                         <div class="form-group">
                             <label for="ques">Comments/Questions</label>
-                            <input type="text" class="form-control" id="ques">
+                            <input type="text" data-forge-name="Comments" class="form-control" id="ques">
                         </div>
                     </div>
                     <div style="text-align:center" style="margin-left:10px;">

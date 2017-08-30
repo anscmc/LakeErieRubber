@@ -495,7 +495,12 @@ h1{
     color:white;
     display: block;
 }
-
+.whiteline{
+    border-top:.25px solid white;
+    margin:0 auto;
+    width:75%;
+    max-width:700px;
+}
 .employee{
     display:inline-block;
     text-align:center;
@@ -507,18 +512,50 @@ h1{
     height:100%;
     width:330px;
     vertical-align:top;
+    padding-top:70px;
+    padding-left:10px;
+}
+.empText2{
+    display:inline-block;
+    color:white;
+    height:100%;
+    width:330px;
+    vertical-align:top;
     padding-top:50px;
     padding-left:10px;
 }
+@media (max-width:703px){
+    .empText2{
+        padding-top:20px;
+    }
+}
 
 .infotext{
-
+    margin-bottom: 0px;
     font-size: 18px;
     font-family: 'Encode Sans', sans-serif;
     text-align: left;
 }
+.infotext2{
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: 'Encode Sans', sans-serif;
+    text-align: left;
+}
+@media (max-width:623px){
+    .infotext3{
+        margin-bottom:10px
+    }
+    .space{
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width:374px){
     .infotext{
+        font-size: 14px;
+    }
+    .infotext2{
         font-size: 14px;
     }
     .empText{
@@ -529,11 +566,16 @@ h1{
     .infotext{
         text-align: center;
     }
+    .infotext2{
+        text-align: left;
+    }
     .empText{
         padding-top:0px;
         padding-left:0px;
+/*
         padding-bottom: 10px;
         margin-bottom: 10px;
+*/
     }
 }
 
@@ -562,6 +604,16 @@ h1{
     border: 3px solid rgb(255,127,0);
 
 }
+.circle3 {
+    width: 250px;
+    height: 250px;
+    background-image: url(images/employees/jon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border: 3px solid rgb(255,127,0);
+
+}
 
 
 
@@ -571,6 +623,9 @@ h1{
         font-size:14px;
     }
     #infotext{
+        font-size: 14px;
+    }
+    #infotext2{
         font-size: 14px;
     }
     #productsp{
@@ -583,6 +638,9 @@ h1{
         font-size:24px;
     }
     #infotext{
+        font-size: 24px;
+    }
+    #infotext2{
         font-size: 24px;
     }
     #productsp{
