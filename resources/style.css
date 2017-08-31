@@ -445,6 +445,30 @@ h1{
     padding-bottom: 10px;
 }
 
+#quoteBTN{
+    font-size: 16px;
+    display: inline-block;
+    width:200px;
+    height:30px;
+    background-color: rgb(255,127,0);
+    line-height: 30px;
+    margin:10px;
+    color:white;
+    border: 1px solid rgb(255,127,0);
+}
+
+#contactBTN{
+    font-size: 16px;
+    display: inline-block;
+    width:200px;
+    height:30px;
+    background-color: transparent;
+    line-height: 30px;
+    margin:10px;
+    color:rgb(255,127,0);
+    border: 1px solid rgb(255,127,0);
+}
+
 @media (max-width:767px){
     .productsWrap{
         display: inline-block;
@@ -532,7 +556,7 @@ h1{
 
 .infotext{
     margin-bottom: 0px;
-    font-size: 18px;
+/*    font-size: 18px;*/
     font-family: 'Encode Sans', sans-serif;
     text-align: left;
 }
@@ -623,13 +647,13 @@ h1{
         font-size:14px;
     }
     #infotext{
-        font-size: 14px;
+        font-size: 14px !important;
     }
     #infotext2{
         font-size: 14px;
     }
     #productsp{
-        font-size:14px;
+        font-size: 14px;
     }
 }
 
