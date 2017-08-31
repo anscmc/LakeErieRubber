@@ -174,6 +174,7 @@
                   <img class="mySlides" src="resources/images/parts/bellow.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
                   <img class="mySlides" src="resources/images/parts/cablecleat.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
                     <img class="mySlides" src="resources/images/parts/fuelfillkit.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
+                    <img class="mySlides" src="resources/images/parts/pea.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
                     <img class="mySlides" src="resources/images/parts/rubbermetalplate.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
                     <img class="mySlides" src="resources/images/parts/rubbermetalplates.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
                     <img class="mySlides" src="resources/images/parts/sandnozzle.png" alt="metal and rubber" style="width:90%;margin:0 auto;box-shadow: 0px 0px 15px">
@@ -258,7 +259,7 @@
                 </div>
             </div>
           </div>
-          <div style="text-align: center;width:100%;"><a id="quoteBTN" href="#quote">Request a Quote</a><a id="contactBTN" href="#contact">Contact Us</a></div>
+          <div style="text-align: center;width:100%;"><a class="btn btn-default quoteBTN" href="#quote" style="max-width: 200px;margin:5px;">Request a Quote</a><a class="btn btn-default reqBTN" href="#contact" style="max-width:200px;margin:5px;">Contact Us</a></div>
       </div>
         <div style="width:100%;min-height:100vh;background-color:rgb(0,63,134)">
             <div id="about">
@@ -277,6 +278,17 @@
                         </div>
                         <p class="infotext" style="margin-bottom: 30px;text-align: left;">"I am excited about the opportunity to develop and grow a business in Erie, PA! We will focus on continuous improvement and Lean Manufacturing tools as the driving force to lead us on our journey. I’m married with two kids and prefer to spend most of my free time with my family. I still like to fit in my hobbies of biking, auto racing (road course), playing music, skiing and golf when I can as well."</p>
                     </div>
+                    <div class="employee">
+                        <div class="circleBase circle4"></div>
+                        <div class="empText">
+                            <p class="infotext" style="font-weight: bold;">Diane Adameck</p>
+                            <p class="infotext">VP of Sales</p>
+                            <p class="infotext">(814) 835-0173 ext. 11 </p>
+                            <p class="infotext">diane.adameck@lakeerierubber.com</p>
+                        </div>
+                        <p class="infotext" style="margin-bottom: 30px;text-align: left;">"I am married to Chuck and between us we have 2 handsome sons and 6 beautiful daughters, spouses, significant others and 3 grandsons. My goal is to grow and preserve not only products from our vegetable garden, but also relationships with existing customers as well as new business relationships. My goal is to make your job easier and less stressful, please do not hesitate to contact me."</p>
+                    </div>
+                    
                     <div class="employee">
                         <div class="circleBase circle2"></div>
                         <div class="empText">
@@ -298,18 +310,12 @@
                     </div>
                 </div>
                 <div>
-                    <div class="empText2" style="padding-bottom:10px;">
-                            <p class="infotext2" style="font-weight: bold;">Diane Adameck</p>
-                            <p class="infotext2">VP of Sales</p>
-                            <p class="infotext2">(814) 835-0173 ext. 11 </p>
-                            <p class="infotext2">diane.adameck@lakeerierubber.com</p>
-                        </div>
                     <div class="empText2">
                             <p class="infotext2" style="font-weight: bold;">Duke Nicewonger</p>
                             <p class="infotext2">Quality Assurance Manager</p>
                             <p class="infotext2">(814) 835-0173</p>
                             <p class="infotext2">duke.nicewonger@lakeerierubber.com</p>
-                        </div>
+                    </div>
                 </div>
                 
             </div>
@@ -323,7 +329,7 @@
                    <form data-forge-name="Quote" style="text-align: center">
                       <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" data-forge-name="Name" class="form-control" id="name">
+                        <input type="text" data-forge-name="Name" class="form-control" id="name" required>
                       </div>
                       <div class="form-group">
                         <label for="title">Title/Job Description</label>
@@ -331,7 +337,7 @@
                       </div>
                       <div class="form-group">
                         <label for="comp">Company</label>
-                        <input type="text" data-forge-name="Company" class="form-control" id="comp">
+                        <input type="text" data-forge-name="Company" class="form-control" id="comp" required>
                       </div>
                       <div class="form-group">
                         <label for="add">Address</label>
@@ -347,15 +353,15 @@
                         </div>
                         <div class="form-group">
                             <label for="ph">Phone</label>
-                            <input type="text" data-forge-name="Phone" class="form-control" id="ph">
+                            <input type="text" data-forge-name="Phone" class="form-control" id="ph" required>
                         </div>
                         <div class="form-group">
                             <label for="em">Email</label>
-                            <input type="email" data-forge-name="Email" class="form-control" id="em">
+                            <input type="email" data-forge-name="Email" class="form-control" id="em" required>
                         </div>
                         <div class="form-group" style="display:block !important;max-width: 100% !important;">
                             <label for="des">Description of Order</label>
-                            <input type="text" data-forge-name="Order Description" class="form-control" id="des">
+                            <input type="text" data-forge-name="Order Description" class="form-control" id="des" required>
                         </div>
                         <div class="form-group" style="display:block !important;max-width: 100% !important;">
                             <label for="ques">Comments/Questions</label>
@@ -364,7 +370,7 @@
 
                         <div style="text-align:center" style="margin-left:10px;">
                             <br>
-                            <input type="submit" value="Request Quote" class="btn btn-default reqBTN">
+                            <input type="submit" value="Send Request" class="btn btn-default reqBTN">
                         </div>
                     </form>
                     <br>
@@ -385,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-            <div style="width:100%;text-align: center;color: white;"><a>Copyright &copy; 2017 Laker Erie Rubber</a><a style="padding-left:10px;padding-right:10px">|</a><a href="privacypolicy.htm">Privacy Policy</a><a style="padding-left:10px;padding-right:10px">|</a></div>
+            <div style="width:100%;text-align: center;color: white;"><a>Copyright &copy; 2017 Lake Erie Rubber</a><a style="padding-left:10px;padding-right:10px">|</a><a href="privacypolicy.htm">Privacy Policy</a><a style="padding-left:10px;padding-right:10px">|</a></div>
         </div>
       
     </body>  
