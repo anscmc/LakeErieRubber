@@ -1,5 +1,19 @@
 /* blue: rgb(0,63,134) #003F86 orange: rgb(255,127,0) #FF7F00 */
 
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
 /* GALLERY */
 .slideNav{
     position:fixed;

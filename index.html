@@ -22,8 +22,9 @@
         <link rel="stylesheet" type="text/css" href="resources/style.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-        <script src="resources/waypoints/lib/noframework.waypoints.min.js"></script>
+<!--        <script src="resources/waypoints/lib/noframework.waypoints.min.js"></script>-->
         <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
 
@@ -78,6 +79,44 @@
                 .end()
                 .appendTo('#slideshow');
             },  3000);
+            
+            
+            //Waypoints
+            
+            $(document).ready(function(){
+ 
+                // hide our element on page load
+                $('#products').css('opacity', 0);
+                $('#aboutp').css('opacity', 0);
+                $('#jon').css('opacity', 0);
+                $('#diane').css('opacity', 0);
+                $('#tracy').css('opacity', 0);
+                $('#george').css('opacity', 0);
+                $('#duke').css('opacity', 0);
+                
+                $('#products').waypoint(function() {
+                  $('#products').addClass('animated fadeIn');
+                }, { offset: '20%' });
+                $('#aboutp').waypoint(function() {
+                  $('#aboutp').addClass('animated fadeIn');
+                }, { offset: '70%' });
+                $('#jon').waypoint(function() {
+                  $('#jon').addClass('animated fadeIn');
+                }, { offset: '70%' });
+                $('#diane').waypoint(function() {
+                  $('#diane').addClass('animated fadeIn');
+                }, { offset: '70%' });
+                $('#tracy').waypoint(function() {
+                  $('#tracy').addClass('animated fadeIn');
+                }, { offset: '70%' });
+                $('#george').waypoint(function() {
+                  $('#george').addClass('animated fadeIn');
+                }, { offset: '70%' });
+                $('#duke').waypoint(function() {
+                  $('#duke').addClass('animated fadeIn');
+                }, { offset: '70%' });
+
+            });
         </script>
         
     
@@ -268,7 +307,7 @@
                 <p id="aboutp">Lake Erie Rubber &amp; Manufacturing is proud to continue as an extension of the Scully Enterprises business started in 1961. Our new ownership, as of August 1, 2017, is dedicated to growing the business in Erie, PA. We operate out of the Scully Enterprises location and have maintained all employees and equipment through the transition.  We are excited to incorporate a continuous improvement, Lean culture through the entire business! We will use the Lean guiding principles to drive continued improvement in safety, quality, delivery and cost for our business. Ultimately, our dedication to the lean process and journey will lead to improved outcomes for our customers.</p>
                 <br>
                 <div class="employees">
-                    <div class="employee">
+                    <div id="jon" class="employee">
                         <div class="circleBase circle3"></div>
                         <div class="empText">
                             <p class="infotext"; style="font-weight: bold">Jon Meighan</p>
@@ -278,7 +317,7 @@
                         </div>
                         <p class="infotext" style="margin-bottom: 30px;text-align: left;">"I am excited about the opportunity to develop and grow a business in Erie, PA! We will focus on continuous improvement and Lean Manufacturing tools as the driving force to lead us on our journey. I’m married with two kids and prefer to spend most of my free time with my family. I still like to fit in my hobbies of biking, auto racing (road course), playing music, skiing and golf when I can as well."</p>
                     </div>
-                    <div class="employee">
+                    <div id="diane" class="employee">
                         <div class="circleBase circle4"></div>
                         <div class="empText">
                             <p class="infotext" style="font-weight: bold;">Diane Adameck</p>
@@ -289,7 +328,7 @@
                         <p class="infotext" style="margin-bottom: 30px;text-align: left;">"I am married to Chuck and between us we have 2 handsome sons and 6 beautiful daughters, spouses, significant others and 3 grandsons. My goal is to grow and preserve not only products from our vegetable garden, but also relationships with existing customers as well as new business relationships. My goal is to make your job easier and less stressful, please do not hesitate to contact me."</p>
                     </div>
                     
-                    <div class="employee">
+                    <div id="tracy" class="employee">
                         <div class="circleBase circle2"></div>
                         <div class="empText">
                             <p class="infotext"; style="font-weight: bold">Tracy Lockwood</p>
@@ -299,7 +338,7 @@
                         </div>
                         <p class="infotext" style="margin-bottom: 30px;text-align: left;">"In my spare time I like to spend time with my family, husband Frank, son, daughter and two stepdaughters. Although the oldest lives out of town, we still travel to spend time with her. Now that our kids are grown we have been doing a little more traveling and plan to continue seeing new places. I also like to play volleyball and take walks with my furbabies."</p>
                     </div>
-                    <div class="employee">
+                    <div id="george" class="employee">
                         <div class="circleBase circle1"></div>
                         <div class="empText">
                             <p class="infotext" style="font-weight: bold;">George Nicewonger</p>
@@ -310,7 +349,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="empText2">
+                    <div id="duke" class="empText2">
                             <p class="infotext2" style="font-weight: bold;">Duke Nicewonger</p>
                             <p class="infotext2">Quality Assurance Manager</p>
                             <p class="infotext2">(814) 835-0173</p>
