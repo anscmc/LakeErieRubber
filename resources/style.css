@@ -343,13 +343,14 @@ h1{
     background-position: center;
     text-align: center;
     padding-bottom:20px;
-    background-attachment:inherit;
+    background-attachment:fixed;
 }
-@media (min-width:1025px){
+@media (max-width:1024px){
     .home{
-        background-attachment: fixed;
+        background-attachment:local;
     }
 }
+
 .homeLeft{
     margin:0px;
     padding-top:7%;
@@ -625,6 +626,8 @@ h1{
 .circleBase {
     border-radius: 50%;
     display:inline-block;
+    height:200px;
+    width:200px;
 }
 
 .circle1 {
