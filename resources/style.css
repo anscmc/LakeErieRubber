@@ -438,13 +438,7 @@ h1{
     width:100%;
     margin-top:10px;
 }
-@media (min-width:768px){
-    #pwrap{
-        top: 100%;
-        -webkit-transform: translateY(20%);
-        transform: translateY(20%);
-    }
-}
+
 
 .productsWrap{
     display:inline-block;
