@@ -444,14 +444,32 @@ h1{
     display:inline-block;
     text-align:left;
 }
+.productsInfo{
+    display:inline-block;
+    text-align:left;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.65);
+box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.65);
+}
 .productSpan{
     font-size:16px;
     display: block;
+}
+.productP2{
+    font-size:16px;
+    font-weight: 300;
+    padding-left:10px;
+    margin-bottom:10px;
 }
 .productTitle{
     font-size: 18px;
     font-weight: bold;
     display: block;
+}
+.productTitle2{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
 }
 .dw{
     text-align: center;
@@ -661,6 +679,38 @@ h1{
     border: 3px solid rgb(255,127,0);
 }
 
+.whyBox{
+    
+    border-radius:10px;
+    display: inline-block;
+  vertical-align: middle;
+    height:400px;
+    width:300px;
+    background-color: rgb(255,127,0);
+    color:white;
+    padding:10px;
+    margin:10px;
+/*
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.65);
+box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.65);
+*/
+-webkit-box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.65);
+box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.65);
+}
+.whyBox p{
+    padding:10px;
+    font-size:24px;
+    font-weight: 500;
+    text-align: left;
+}
+
+#qSpan{
+    font-size:120px;
+    width:100%;
+    text-align: center;
+    display: block;
+}
+
 
 
 
@@ -758,3 +808,40 @@ h1{
         height:40vh;
     }
 }
+#missionwrap{
+    text-align:center;
+    display: inline-block;
+}
+.missionSpan{
+    display: inline;
+    margin:20px;
+    font-size: 26px;
+    height:50px;
+}
+#spacer{
+    height:40px;
+}
+@media (max-width:1024px){
+    .missionSpan{
+        display: block;
+    }
+    #spacer{
+    display:none;
+}
+    #missionwrap{
+    text-align:left;
+}
+}
+@media (max-width:767px){
+    .missionSpan{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+

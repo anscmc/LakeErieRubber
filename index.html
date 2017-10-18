@@ -86,13 +86,30 @@
             $(document).ready(function(){
  
                 // hide our element on page load
+                $('#why1').css('opacity', 0);
+                $('#why2').css('opacity', 0);
+                $('#why3').css('opacity', 0);
+                $('#why4').css('opacity', 0);
+                
                 $('#products').css('opacity', 0);
                 $('#aboutp').css('opacity', 0);
                 $('#jon').css('opacity', 0);
                 $('#diane').css('opacity', 0);
                 $('#tracy').css('opacity', 0);
                 $('#george').css('opacity', 0);
-
+                
+                $('#why1').waypoint(function() {
+                  $('#why1').addClass('animated fadeIn');
+                }, { offset: '90%' });
+                $('#why2').waypoint(function() {
+                  $('#why2').addClass('animated fadeIn');
+                }, { offset: '90%' });
+                $('#why3').waypoint(function() {
+                  $('#why3').addClass('animated fadeIn');
+                }, { offset: '90%' });
+                $('#why4').waypoint(function() {
+                  $('#why4').addClass('animated fadeIn');
+                }, { offset: '90%' });
                 
                 $('#products').waypoint(function() {
                   $('#products').addClass('animated fadeIn');
@@ -201,7 +218,23 @@
         </div>
         <a class="hamburger"><i onclick="showNav()" class="fa fa-bars" aria-hidden="true" height=100></i></a>
           </div>
+        
       <div id="products">
+          <h1 class="fontH fontProd" style="text-align: center">Our Mission</h1>
+          <br>
+          <div style="text-align: center;">
+            <p id="productsp" >5 simple, actionable core values create an environment for engaged emloyees in all departments. That engagement delivers quality products, great customer service and community involvement.</p>
+              <br>
+              <div id="missionwrap">
+                  <span class="missionSpan" ><img src="resources/images/mission/helppeople.png" style="height:50px"> Help People</span>
+                  <span class="missionSpan" ><img src="resources/images/mission/highfive.png" style="height:50px"> Build Positive Relationships</span>
+                  <span class="missionSpan" ><img src="resources/images/mission/images.png" style="height:50px"><span style="color:white !important;">.</span> Always Improve</span>
+                  <div id="spacer"></div>
+                  <span class="missionSpan" ><img src="resources/images/mission/giveback.png" style="height:50px"> Give Back</span>
+                  <span class="missionSpan" ><img src="resources/images/mission/havefun.png" style="height:50px"><span style="color:white !important;">.</span> Have Fun!</span>
+                  </div>
+          </div>
+          
           <h1 class="fontH fontProd" style="text-align: center;">PRODUCTS</h1>
           <br>
           <div class="container">
@@ -260,7 +293,9 @@
                         <span class="productSpan">Butyl (IIR), Bromobutyl, Chlorobutyl</span>
                         <span class="productSpan">Ethylene Propylene (EPDM)</span>
                         <span class="productSpan">Neoprene (NBR)</span>
+                        <span class="productSpan">Nitrile (NBR)</span>
                         <span class="productSpan">Silicone (S)</span>
+                        <span class="productSpan">Buna (N)</span>
                         <span class="productSpan">Fluorocarbon (FPM)</span>
                         <span class="productSpan" style="">Fluorosilicone (FSI)</span>
                     </div>
@@ -295,14 +330,59 @@
                     </div>
                 </div>
             </div>
+              <div class="row">
+                <div class="col-sm-12" style="text-align: center">
+                    <br>
+                    <div class="productsInfo">
+                        <p class="productP2"><span class="productTitle2">Size:</span> 40" X 32" or smaller molded parts.</p>
+                        <p class="productP2"><span class="productTitle2">Weight:</span> 20 lb or lighter injection molded parts. Greather than 20 lb molded parts with compression molding.</p>
+                        <p class="productP2"><span class="productTitle2">Methods:</span> Injection/compression/transfer molding, extrusions,
+lathe cut, die cut, flat/sheet rubber, water jet, laser cut.</p>
+                        <p class="productP2"><span class="productTitle2">Services:</span> We can help in your design process! Let us help
+determine the best materials and method of manufacturing for
+optimal quality and cost in your application.</p>
+                        <p class="productP2"><span class="productTitle2">Cost:</span> We can compete with low cost country pricing without the
+international headaches! Lean Manufacturing and low overhead
+give us a competitive advantage.</p>
+                    </div>
+                  </div>
+              </div>
           </div>
+          <br>
           <div style="text-align: center;width:100%;"><a class="btn btn-default quoteBTN" href="#quote" style="max-width: 200px;margin:5px;">Request a Quote</a><a class="btn btn-default reqBTN" href="#contact" style="max-width:200px;margin:5px;">Contact Us</a></div>
       </div>
         <div style="width:100%;min-height:100vh;background-color:rgb(0,63,134)">
-            <div id="about">
+            <div id="about" style="text-align: center;">
+                
+<h1 class="fontH" style="font-family: 'Encode Sans', sans-serif;color:white !important;text-align: center;">Why Choose Lake Erie Rubber?</h1>
+
+                        <div id="why1" class="whyBox">
+                            <p class="whyP">Did you know that U.S. manufacturers only have 25% of
+employees engaged in their job?</p>
+                            <span id="qSpan">?</span>
+                        </div>
+                        <div id="why2" class="whyBox">
+                            <p class="whyP">Engagement means an employee answers yes to 2
+questions:</p>
+                            <br>
+                            <span style="text-align: left;display: block;width: 100%;padding-left:40px;font-size:22px;font-weight:500;">1. Do you care about the work you do?</span>
+                            <br>
+                            <span style="text-align: left;display: block;width: 100%;padding-left:40px;font-size:22px;font-weight:500;">2. Do you care about your company?</span>
+                        </div>
+                        <div id="why3" class="whyBox">
+                            <p class="whyP" style="margin-top:50px;">Most manufacturers lack focus on employee engagement to
+ensure all employees care about their work, the company
+and the customer.</p>
+                        </div>
+                        <div id="why4" class="whyBox">
+                            <p class="whyP" style="margin-top:20px">We strive for 100% engagement so our customers can be
+confident they will always get our best products, service
+and even help unrelated to our products if needed.</p>
+                        </div>
+            
                 <h1 class="fontH" style="font-family: 'Encode Sans', sans-serif;color:white !important;text-align: left;">ABOUT US</h1>
                 <div class="lineL"></div>
-                <p id="aboutp">Lake Erie Rubber &amp; Manufacturing is proud to continue as an extension of the Scully Enterprises business started in 1961. Our new ownership, as of August 1, 2017, is dedicated to growing the business in Erie, PA. We operate out of the Scully Enterprises location and have maintained all employees and equipment through the transition.  We are excited to incorporate a continuous improvement, Lean culture through the entire business! We will use the Lean guiding principles to drive continued improvement in safety, quality, delivery and cost for our business. Ultimately, our dedication to the lean process and journey will lead to improved outcomes for our customers.</p>
+                <p id="aboutp">Lake Erie Rubber &amp; Manufacturing is proud to continue as an extension of the Scully Enterprises business started in 1961. Our new ownership, as of August 1, 2017, is dedicated to growing the business in Erie, PA. We operate out of the Scully Enterprises location and have maintained all employees and equipment through the transition. We are excited to incorporate a continuous improvement, Lean culture through the entire business! We will use the Lean guiding principles to drive continued improvement in safety, quality, delivery and cost for our business. Ultimately, our dedication to the lean process and journey will lead to improved outcomes for our customers.</p>
                 <br>
                 <div class="employees">
                     <div id="jon" class="employee">
