@@ -433,7 +433,9 @@ h1{
     font-size: 18px;
     width:100%;
     font-family: 'Encode Sans', sans-serif;
+
 }
+.mission
 #pwrap{
     width:100%;
     margin-top:10px;
@@ -744,6 +746,27 @@ box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.65);
         font-size:24px;
     }
 }
+.missionImg{
+    height:50px;
+}
+.missionImg2{
+    height:55px;
+}
+@media (min-width:1080px){
+
+    #productsp{
+        font-size:26px;
+        line-height: 38px;
+    }
+    .missionImg{
+    height:75px;
+}
+    .missionImg2{
+    height:80px;
+}
+    
+
+}
 
 #quote{
     padding:20px;
@@ -837,7 +860,6 @@ box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.65);
         font-size: 18px;
     }
 }
-
 
 
 
