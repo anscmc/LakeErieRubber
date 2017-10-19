@@ -141,8 +141,9 @@
     
     <div class="nav2">
         <div style="margin-top:10px;">
-            <a href="#products" class="navText1"><span>Products</span></a>
-            <a href="#about" class="navText1"><span>About Us</span></a>
+            <a href="#missionScroll" class="navText1"><span>Mission</span></a>
+            <a href="#prodScroll" class="navText1"><span>Products</span></a>
+            <a href="#whyScroll" class="navText1"><span>About Us</span></a>
             <a href="#quote" class="navText1"><span>Request a Quote</span></a>
             <a href="#contact" class="navText1"><span>Contact Us</span></a>
         </div>
@@ -153,9 +154,11 @@
                  <a onclick="showNav()" class="xBtn">X</a>
               <a href="#home" onclick="showNav()"><span class="navText3">Home</span></a>
               <br>
-              <a href="#products" onclick="showNav()"><span class="navText3">Products</span></a>
+            <a href="#missionScroll" onclick="showNav()"><span class="navText3">Mission</span></a>
+                <br>
+              <a href="#prodScroll" onclick="showNav()"><span class="navText3">Products</span></a>
               <br>
-              <a href="#about" onclick="showNav()"><span class="navText3">About Us</span></a>
+              <a href="#whyScroll" onclick="showNav()"><span class="navText3">About Us</span></a>
               <br>
               <a href="#quote" onclick="showNav()"><span class="navText3">Request a Quote</span></a>
               <br>
@@ -211,8 +214,9 @@
               <div style="margin-top:15px;">
                   
             <a href="#home" class="navText2"><span>Home</span></a>
-            <a href="#products" class="navText2"><span>Products</span></a>
-            <a href="#about" class="navText2"><span>About Us</span></a>
+                  <a href="#missionScroll" class="navText2"><span>Mission</span></a>
+            <a href="#prodScroll" class="navText2"><span>Products</span></a>
+            <a href="#whyScroll" class="navText2"><span>About Us</span></a>
             <a href="#quote" class="navText2"><span>Request a Quote</span></a>
             <a href="#contact" class="navText2"><span>Contact Us</span></a>
         </div>
@@ -220,24 +224,48 @@
           </div>
         
       <div id="products">
+          <div id="missionScroll" style="height:30px;"></div>
+          <div class="mission">
           <h1 class="fontH fontProd" style="text-align: center">Our Mission</h1>
           <br>
           <div style="text-align: center;">
             <p id="productsp" >5 simple, actionable core values create an environment for engaged emloyees in all departments. That engagement delivers quality products, great customer service and community involvement.</p>
               <br>
-              <br>
+
               <div id="missionwrap">
-                  <span class="missionSpan" ><img class="missionImg" src="resources/images/mission/helppeople.png" > Help People</span>
-                  <span class="missionSpan" ><img class="missionImg" src="resources/images/mission/highfive.png" > Build Positive Relationships</span>
-                  <span class="missionSpan" ><img class="missionImg" src="resources/images/mission/images.png" ><span style="color:white !important;">.</span> Always Improve</span>
+                  <div class="imgWrap">
+                      <span class="missionSpan" >Help People</span>
+                      <br>
+                      <img class="missionImg" src="resources/images/mission/helppeople.png" >
+                  </div>
+                  <div class="imgWrap">
+                      <span class="missionSpan" >Build Positive Relationships</span>
+                      <br>
+                      <img class="missionImg" src="resources/images/mission/highfive.png" >
+                  </div>
+                  <div class="imgWrap">
+                      <span class="missionSpan" ><span style="color:white !important;"></span>Always Improve</span>
+                      <br>
+                      <img class="missionImg" src="resources/images/mission/images.png" >
+                  </div>
                   <div id="spacer"></div>
-                  <span class="missionSpan" ><img class="missionImg" src="resources/images/mission/giveback.png" > Give Back</span>
-                  <span class="missionSpan" ><img class="missionImg2" src="resources/images/mission/havefun.png" ><span style="color:white !important;">.</span> Have Fun!</span>
+                  <div class="imgWrap">
+                      <span class="missionSpan" >Give Back</span>
+                      <br>
+                      <img class="missionImg" src="resources/images/mission/giveback.png" >
+                  </div>
+                  <div class="imgWrap">
+                      <span class="missionSpan" ><span style="color:white !important;"></span>Have Fun!</span>
+                      <br>
+                      <img class="missionImg2" src="resources/images/mission/havefun.png" >
+                  </div>
                   </div>
           </div>
+              </div>
           <br>
           <br>
-          
+          <div id="prodScroll" style="height:40px"></div>
+          <div id="prodWrap">
           <h1 class="fontH fontProd" style="text-align: center;">PRODUCTS</h1>
           <br>
           <div class="container">
@@ -353,11 +381,15 @@ give us a competitive advantage.</p>
           </div>
           <br>
           <div style="text-align: center;width:100%;"><a class="btn btn-default quoteBTN" href="#quote" style="max-width: 200px;margin:5px;">Request a Quote</a><a class="btn btn-default reqBTN" href="#contact" style="max-width:200px;margin:5px;">Contact Us</a></div>
+              <br>
       </div>
+            </div>
+        <div id="whyScroll" style="height:1px;"></div>
         <div style="width:100%;min-height:100vh;background-color:rgb(0,63,134)">
             <div id="about" style="text-align: center;">
-                
-<h1 class="fontH" style="font-family: 'Encode Sans', sans-serif;color:white !important;text-align: center;">Why Choose Lake Erie Rubber?</h1>
+                <div id="whyWrap">
+                    <div class="innerWhy">
+<h1 class="fontH" style="font-family: 'Encode Sans', sans-serif;color:black !important;text-align: center;">Why Choose Lake Erie Rubber?</h1>
 
                         <div id="why1" class="whyBox">
                             <p class="whyP">Did you know that U.S. manufacturers only have 25% of
@@ -382,7 +414,14 @@ and the customer.</p>
 confident they will always get our best products, service
 and even help unrelated to our products if needed.</p>
                         </div>
-            
+                        <br>
+                <br>
+                        <br>
+                <br>
+                        </div>
+            </div>
+                
+                <div id="aboutWrap">
                 <h1 class="fontH" style="font-family: 'Encode Sans', sans-serif;color:white !important;text-align: left;">ABOUT US</h1>
                 <div class="lineL"></div>
                 <p id="aboutp">Lake Erie Rubber &amp; Manufacturing is proud to continue as an extension of the Scully Enterprises business started in 1961. Our new ownership, as of August 1, 2017, is dedicated to growing the business in Erie, PA. We operate out of the Scully Enterprises location and have maintained all employees and equipment through the transition. We are excited to incorporate a continuous improvement, Lean culture through the entire business! We will use the Lean guiding principles to drive continued improvement in safety, quality, delivery and cost for our business. Ultimately, our dedication to the lean process and journey will lead to improved outcomes for our customers.</p>
@@ -440,7 +479,7 @@ and even help unrelated to our products if needed.</p>
                 
             </div>
         </div>
-
+</div>
       <div id="quote">
           <h1 class="classH" style="text-align: center;">REQUEST A QUOTE</h1>
           <div stle="height:20px;width:100%;display:inline-block"></div>
